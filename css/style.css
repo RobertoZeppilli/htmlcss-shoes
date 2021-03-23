@@ -1,0 +1,99 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* common */
+body {
+    font-family:  'Rubik Mono One', sans-serif;  
+}
+
+h2 {
+    font-size: 40px;
+    color: yellow;
+}
+
+/* container */
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+/* backgrounds & green text */
+#red {
+    background-color: red;
+}
+#green {
+    background-color: green;
+}
+#yellow {
+    background-color: yellow;
+}
+.green {
+    color: green;
+}
+
+/* img & text container */
+figure {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Numbers navbar */
+nav {
+    padding: 40px 10px 0 0;
+}
+.page-selector {
+    text-align: right;
+}
+.page-selector li {
+    display: inline-block;
+    list-style: none;   
+}
+.page-selector a {
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+/* active state */
+.page-selector a.active.red {
+    color: red;
+    background-color: yellow;
+}
+.page-selector a.active.green {
+    color: green;
+    background-color: yellow;
+}
+.page-selector a.active.yellow {
+    color: yellow;
+    background-color: green;
+}
+
+/* hover */
+.red-page li:hover a {
+    color: red;
+    background-color: yellow;
+    transition: all 0.5s ease-in;
+}    
+.green-page li:hover a {
+    color: green;
+    background-color: yellow;
+    transition: all 0.5s ease-in;
+} 
+.yellow-page li:hover a {
+    color: yellow;
+    background-color: green;
+    transition: all 0.5s ease-in;
+} 
