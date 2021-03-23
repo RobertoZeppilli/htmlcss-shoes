@@ -22,36 +22,23 @@ h2 {
     width: 100%;
 }
 
-/* backgrounds & green text */
-#red {
-    background-color: red;
-}
-#green {
-    background-color: green;
-}
-#yellow {
-    background-color: yellow;
-}
-.green {
-    color: green;
-}
 
-/* img & text container */
-figure {
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+/* Header */
+header {
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 5px;
+    right: 10px;
 }
-
-/* Numbers navbar */
 nav {
-    padding: 40px 10px 0 0;
-}
+    height: 80px;
+    line-height: 80px;
+} 
 .page-selector {
     text-align: right;
+    
 }
 .page-selector li {
     display: inline-block;
@@ -67,33 +54,32 @@ nav {
     background-color: white;
 }
 
-/* active state */
-.page-selector a.active.red {
-    color: red;
-    background-color: yellow;
+/* backgrounds & green text */
+#red {
+    background-color: red;
 }
-.page-selector a.active.green {
-    color: green;
-    background-color: yellow;
-}
-.page-selector a.active.yellow {
-    color: yellow;
+#green {
     background-color: green;
+}
+#yellow {
+    background-color: yellow;
+}
+.green {
+    color: green;
+}
+/* img & text container */
+figure {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* hover */
-.red-page li:hover a {
-    color: red;
-    background-color: yellow;
+li:hover a {
+    color: yellow;
+    background-color: lightcoral;
     transition: all 0.5s ease-in;
 }    
-.green-page li:hover a {
-    color: green;
-    background-color: yellow;
-    transition: all 0.5s ease-in;
-} 
-.yellow-page li:hover a {
-    color: yellow;
-    background-color: green;
-    transition: all 0.5s ease-in;
-} 
